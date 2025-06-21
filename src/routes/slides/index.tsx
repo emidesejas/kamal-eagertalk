@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import Reveal from "reveal.js";
+import RevealNotes from "reveal.js/plugin/notes/notes";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 
@@ -19,6 +20,8 @@ function SlidesPage() {
 
 		deckRef.current = new Reveal(deckDivRef.current, {
 			transition: "slide",
+			showNotes: "separate-page",
+			plugins: [RevealNotes],
 			// other config options
 		});
 

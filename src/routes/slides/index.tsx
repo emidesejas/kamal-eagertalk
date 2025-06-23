@@ -5,6 +5,8 @@ import RevealNotes from "reveal.js/plugin/notes/notes";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 
+import { Slide as FirstSlide } from "~/slides/first-slide";
+
 export const Route = createFileRoute("/slides/")({
 	component: SlidesPage,
 });
@@ -46,8 +48,7 @@ function SlidesPage() {
 		<div className="h-dvh w-full">
 			<div className="reveal" ref={deckDivRef}>
 				<div className="slides">
-					<section>Slide 1</section>
-					<section>Slide 2</section>
+					<FirstSlide />
 				</div>
 			</div>
 		</div>

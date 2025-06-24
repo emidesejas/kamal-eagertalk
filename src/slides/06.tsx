@@ -38,13 +38,25 @@ export const Slide = () => {
 			</section>
 
 			<section data-auto-animate>
-				<h3 data-id="where-does-kamal-step-in">
-					How does the process look like?
-				</h3>
-			</section>
+				<p>How does the deploy process look like?</p>
 
-			<section data-auto-animate>
-				<p>Put something showing the process</p>
+				<div className="r-stack">
+					<img
+						className="fragment"
+						src="/images/kamal_1.png"
+						alt="Kamal Process step 1"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_2.png"
+						alt="Kamal Process step 2"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_3.png"
+						alt="Kamal Process step 3"
+					/>
+				</div>
 			</section>
 		</section>
 	);

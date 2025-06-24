@@ -58,6 +58,44 @@ export const Slide = () => {
 					/>
 				</div>
 			</section>
+
+			<section data-auto-animate>
+				<p>Is that all?</p>
+
+				<p className="fragment fade-in">No, there is more!</p>
+			</section>
+
+			<section data-auto-animate>
+				<p>Kamal proxy!</p>
+
+				<div className="r-stack">
+					<img
+						className="fragment"
+						src="/images/kamal_proxy_1.png"
+						alt="Kamal Proxy step 1"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_proxy_2.png"
+						alt="Kamal Proxy step 2"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_proxy_3.png"
+						alt="Kamal Proxy step 3"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_proxy_4.png"
+						alt="Kamal Proxy step 4"
+					/>
+					<img
+						className="fragment"
+						src="/images/kamal_proxy_5.png"
+						alt="Kamal Proxy step 5"
+					/>
+				</div>
+			</section>
 		</section>
 	);
 };

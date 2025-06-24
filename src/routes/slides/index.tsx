@@ -14,6 +14,7 @@ import { Slide as CommonFlowsSlide } from "~/slides/04";
 import { Slide as DockerSlide } from "~/slides/05";
 import { Slide as KamalSlide } from "~/slides/06";
 import { Slide as ExampleSlide } from "~/slides/07";
+import { Slide as ThankYouSlide } from "~/slides/08";
 
 export const Route = createFileRoute("/slides/")({
 	component: SlidesPage,
@@ -65,6 +66,7 @@ function SlidesPage() {
 					<DockerSlide />
 					<KamalSlide />
 					<ExampleSlide />
+					<ThankYouSlide />
 				</div>
 			</div>
 		</div>

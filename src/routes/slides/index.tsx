@@ -1,11 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import Reveal from "reveal.js";
-import RevealNotes from "reveal.js/plugin/notes/notes";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
+import "reveal.js/plugin/highlight/monokai.css";
+import Highlight from "reveal.js/plugin/highlight/highlight";
+import RevealNotes from "reveal.js/plugin/notes/notes";
 
 import { Slide as TitleSlide } from "~/slides/01";
+import { Slide as AgendaSlide } from "~/slides/02";
+import { Slide as CICDSlide } from "~/slides/03";
+import { Slide as CommonFlowsSlide } from "~/slides/04";
+import { Slide as DockerSlide } from "~/slides/05";
+import { Slide as KamalSlide } from "~/slides/06";
+import { Slide as ExampleSlide } from "~/slides/07";
 
 export const Route = createFileRoute("/slides/")({
 	component: SlidesPage,
@@ -23,7 +31,9 @@ function SlidesPage() {
 		deckRef.current = new Reveal(deckDivRef.current, {
 			transition: "slide",
 			showNotes: "separate-page",
-			plugins: [RevealNotes],
+			plugins: [RevealNotes, Highlight],
+			viewDistance: 100,
+			autoAnimate: true,
 			// other config options
 		});
 
@@ -49,6 +59,12 @@ function SlidesPage() {
 			<div className="reveal" ref={deckDivRef}>
 				<div className="slides">
 					<TitleSlide />
+					<AgendaSlide />
+					<CICDSlide />
+					<CommonFlowsSlide />
+					<DockerSlide />
+					<KamalSlide />
+					<ExampleSlide />
 				</div>
 			</div>
 		</div>

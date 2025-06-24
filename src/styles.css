@@ -20,3 +20,21 @@ code {
     display: revert !important;
   }
 }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 40px 10px rgba(34, 197, 94, 0); /* green */
+  }
+  25% {
+    box-shadow: 0 0 40px 10px rgba(59, 130, 246, 0.7); /* blue */
+  }
+  50% {
+    box-shadow: 0 0 40px 10px rgba(239, 68, 68, 0.7); /* red */
+  }
+  75% {
+    box-shadow: 0 0 40px 10px rgba(234, 179, 8, 0.7); /* yellow */
+  }
+  100% {
+    box-shadow: 0 0 40px 10px rgba(59, 130, 246, 0); /* blue */
+  }
+}
